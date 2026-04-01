@@ -395,7 +395,7 @@ function buscarMejoresRespuestasLocales($db, $pregunta, $limite = 3) {
    LLAMAR A LA IA REMOTA
 ========================================= */
 function preguntarIAremota($prompt) {
-	$url = "https://covalently-untasked-daphne.ngrok-free.dev/chat/?q=" . urlencode($prompt);
+	$url = "https://XXX/chat/?q=" . urlencode($prompt);
 
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, $url);
